@@ -1,0 +1,75 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .pic1Ab {
+        float: right;
+        padding: 40px;
+        padding-top: 58px;
+        padding-right: 37px;
+        padding-bottom: 75px;
+    }
+    .pic2Ab {
+        float: left;
+        padding: 40px;
+        padding-top: 58px;
+        padding-right: 37px;
+        padding-bottom: 75px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .colours {
+        display: none;
+    }
+    .section-1 .carousel-indicators {
+        display: none;
+    }
+    .section-1 .carousel-caption {
+        margin-bottom: 5px;
+    }
+    .about1 {
+        float: none;
+        text-align: center;
+        border-right: none;
+    }
+    .top .about1 {
+        border-bottom: none;
+        padding-bottom: 30px;
+    }
+    .top .about2 {
+        border-top: 1px dashed #F1F1F1;
+        border-bottom: 1px dashed #F1F1F1;
+        padding-bottom: 30px;
+    }
+    .bottom .about1 {
+        border-top: none;
+        border-bottom: 1px dashed #F1F1F1;
+        padding-bottom: 30px;
+    }
+    .bottom .about2 {
+        border-bottom: none;
+        border-top: none;
+    }
+    .about2 {
+        float: none;
+        text-align: center;
+        border-left: none;
+    }
+    .pic1Ab {
+        float: none;
+        padding-top: 30px;
+        padding-right: 37px;
+        padding-bottom: 5px;
+    }
+    .pic2Ab {
+        float: none;
+        padding-top: 30px;
+        padding-right: 37px;
+        padding-bottom: 5px;
+    }
+    .section-6 .contact .text-center {
+        text-align: center;
+    }
+    .section-6 .address {
+        text-align: center;
+    }
+    
+}

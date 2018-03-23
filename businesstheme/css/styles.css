@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', 'sans-serif';
+    background: url(../img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    color: #F1F1F1;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Top Colour Band Style Starts*/
+
+.colour-1,
+.colour-2,
+.colour-3,
+.colour-4 {
+    min-width: 25px;
+    min-height: 10px;
+}
+
+.colour-1 {
+     /* Top Colour Band color 1*/
+    background-color: #C0272D;
+}
+
+.colour-2 {
+    /* Top Colour Band color 2*/
+    background-color: #F37F22;
+}
+
+.colour-3 {
+    /* Top Colour Band color 3*/
+    background-color: #30AC92;
+}
+
+.colour-4 {
+    /* Top Colour Band color 4*/
+    background-color: #995CAA;
+}
+
+
+/* Top Colour Band Style Ends*/
+
+
+/* Navbar Style Starts*/
+
+.navbar {
+    border-radius: 0;
+    box-shadow: 0px 1px 5px #888888;
+    /* You can change navbar color below */
+    background-color: #3D3A5C;
+    border: 0px;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+}
+
+/* Adjust this value to vertically allign (to center) company logo */
+.navbar-default .navbar-brand {
+    transform: translateY(-25%);
+}
+
+/* navbar brand name color (eg: AmazingCreations) */
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: #F1F1F1;
+}
+
+/* navbar brand name hover color (eg: AmazingCreations) */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #F1F1F1;
+}
+
+/* navbar brand name focus color (eg: AmazingCreations) */
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #F1F1F1;
+}
+
+/* to add border to menu items change 0px to 1px */
+.navbar-default .navbar-nav li a {
+    border-left: 0px dashed black;
+}
+
+/* Menu items font color and background color */
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #F1F1F1;
+    background-color: #FBAE3F;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0px;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+    border: transparent;
+    background-color: transparent;
+}
+
+
+/* You can set navbar toggle Colors (mobile menu) here */
+.navbar-default .navbar-toggle .col1 {
+    background-color: #C0272D;
+}
+
+.navbar-default .navbar-toggle .col2 {
+    background-color: #FBAE3F;
+}
+
+.navbar-default .navbar-toggle .col3 {
+    background-color: #8CC63F;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #F05A24;
+}
+/* navbar toggle Colors style ends */
+
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+/* Navbar Style Ends*/
+
+
+/* Section-1 (Carousal) style starts */
+
+.section-1 {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel-caption a:focus {
+    border: none;
+    background-color: transparent;
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Button style starts*/
+.btn-default {
+    margin-top: 5%;
+    padding: 15px 36px;
+    background-color: #F05A24;
+    border-radius: 30px;
+    border: 0px;
+    color: #F1F1F1;
+}
+
+.btn-default:hover {
+    background-color: #C0272D;
+    color: #F1F1F1;
+}
+/* Button style ends*/
+
+/* Section-1 (Carousal) style ends */
+
+
+/* Section-2 (About Us) style starts */
+
+.section-2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgba(77,16,32, 1);
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.img-responsive {
+    margin: auto;
+}
+
+.section-2 h1 {
+    margin-bottom: 25px;
+}
+
+.section-2 .video-wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-bottom: 30px;
+}
+
+.section-2 .content {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/* Section-2 (About Us) style ends */
+
+
+/* Section-3 (Services) style starts */
+
+.section-3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #3D3A5C;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    color: #F1F1F1;
+}
+
+.section-3 h1 {
+    margin-bottom: 25px;
+}
+
+.section-3 p {
+    text-align: center;
+}
+
+
+/* Section-3 (Services) style ends */
+
+
+/* Section-4 (Testemonial) style starts */
+
+.section-4 {
+    background-color: rgba(192, 39, 45, 1);
+    padding-bottom: 70px;
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
+}
+
+.section-4 h1 {
+    margin-bottom: 25px;
+}
+
+.section-4 .about .col-sm-6 {
+    padding: 0;
+}
+
+.about1 {
+    float: right;
+    text-align: right;
+    border-right: 1px dashed #F1F1F1;
+}
+
+.top .about1,
+.top .about2 {
+    border-bottom: 1px dashed #F1F1F1;
+}
+
+.bottom .about1,
+.bottom .about2 {
+    border-top: 1px dashed #F1F1F1;
+}
+
+.about2 {
+    float: left;
+    text-align: left;
+    border-left: 1px dashed #F1F1F1;
+}
+
+.pic1Ab {
+    float: right;
+    padding: 40px;
+    padding-top: 51px;
+    padding-right: 37px;
+    padding-bottom: 15px;
+}
+
+.pic2Ab {
+    float: left;
+    padding: 40px;
+    padding-top: 51px;
+    padding-right: 37px;
+    padding-bottom: 15px;
+}
+
+
+/* Section-4 (Testemonial) style ends */
+
+
+/* Section-5 (Clients) style starts */
+
+.section-5 {
+    background-color: #3D3A5C;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.section-5 h1 {
+    margin-bottom: 25px;
+}
+
+
+/* Section-5 (Clients) style ends */
+
+
+/* Section-6 (Contact Us) style starts */
+
+.section-6 {
+    background-color: #4D1020;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.section-6 h1 {
+    margin-bottom: 25px;
+}
+
+.section-6 .contact {
+    text-align: left;
+}
+
+.section-6 label {
+    display: none;
+}
+
+.section-6 input,
+.section-6 textarea {
+    padding-left: 32px;
+    border-color: transparent;
+    background-color: rgba(192, 39, 45, 1);
+    border-radius: 0px;
+}
+
+.icon {
+    float: left;
+    margin-left: 8px;
+    margin-top: -24px;
+    position: relative;
+    z-index: 2;
+    color: #222222;
+}
+
+.icon-textarea {
+    float: left;
+    margin-left: 8px;
+    margin-top: -104px;
+    position: relative;
+    z-index: 2;
+    color: #222222;
+}
+
+.section-6 .contact .btn-default {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 15px 36px;
+    background-color: #C0272D;
+    border-radius: 0px;
+    border: 0px;
+    color: #F1F1F1;
+}
+
+.section-6 .btn-default:hover,
+.section-6 .btn-default:focus {
+    background-color: #F05A24;
+    color: #F1F1F1;
+    border-color: transparent;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+.section-6 .contact .text-center {
+    text-align: left;
+    padding: 0;
+}
+
+.section-6 .address {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.section-6 .address a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* social media hover colors */
+.section-6 .address .twitter:hover{
+    color: #00ACED;
+}
+.section-6 .address .fb:hover{
+    color: #3B5998;
+}
+.section-6 .address .dribble:hover{
+    color: #C73B6F;
+}
+.section-6 .address .flickr:hover{
+    color: #FF0084;
+}
+.section-6 .address .youtube:hover{
+    color: #BB0000;
+}
+
+/* Section-6 (Contact Us) style ends */
+
+
+/* Section-7 (Map) style starts */
+
+.section-7 {
+    padding: 0;
+}
+
+.section-7 .col-sm-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/* Section-7 (Map) style ends */
+
+
+/* Footer style starts */
+
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    background-color: rgba(192, 39, 45, 1);
+    text-align: center;
+}
+
+
+/* Footer style ends */
+
+
+/* Back to Top Style starts*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 1.25em;
+    right: 0px;
+    text-decoration: none;
+    color: #FBAE3F;
+    background-color: rgba(235, 235, 235, 0);
+    padding-right: 1em;
+    display: none;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background-color: rgba(135, 135, 135, 0);
+    color: #F05A24;
+}
+
+
+/* Back to Top Styleends*/
