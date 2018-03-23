@@ -1,0 +1,64 @@
+
+/* === MEDIA QUERIES === */
+
+@media screen and ( max-width : 991px){
+  .social{
+    // display: none;
+  }
+  #moto{
+    padding: 60px 20px;
+  }
+}
+
+@media screen and ( max-width : 768px){
+
+  #logo-name{
+    font-family: $font-stack-logo;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0 60px;
+  }
+
+  #moto{
+    padding: 60px 20px;
+
+    h1{
+      font-size: 45px;//franklin gothic
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and ( max-width : 568px){
+
+  #logo-name{
+    font-family: $font-stack-logo;
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+
+  section.main-wrapper{
+    background-size: contain;
+    &:after{
+      // margin-top: -300px;
+      min-height: 600px;
+    }
+  }
+
+  #moto{
+    padding: 30px 30px 50px;
+    h1{
+      font-size: 40px;//franklin gothic
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .footer-div {
+    .form-row{
+      padding: 40px 30px 15px;
+    }
+  }
+}

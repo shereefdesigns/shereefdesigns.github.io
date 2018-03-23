@@ -1,0 +1,309 @@
+@font-face {
+  font-family: AlisandraDemo;
+  src: url("../fonts/AlisandraDemo.ttf");
+}
+
+/* === GENERAL === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(#e6dfd9 1%, #837A7b 99%);
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  color: #F1F1F1;
+}
+
+#myNavbar {
+  background: transparent;
+}
+
+#myNavbar li {
+  padding: 5px 10px;
+}
+
+#myNavbar li a {
+  color: white;
+}
+
+#myNavbar li.active {
+  background-color: #fb5255;
+}
+
+#myNavbar .social a {
+  font-size: 17px;
+  margin-right: 10px;
+  color: white;
+}
+
+#logo-name {
+  font-family: "AlisandraDemo", sans-serif;
+  font-size: 61px;
+  text-align: center;
+  margin: 30px 0 60px;
+}
+
+.btn-primary {
+  background-color: #fb5255;
+  border-radius: 0;
+  border-color: #fb5255;
+  width: 125px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  border-color: #47434C;
+  background-color: #fb5255;
+  -webkit-box-shadow: inset 0px 0px 71px -11px black;
+  -moz-box-shadow: inset 0px 0px 71px -11px black;
+  box-shadow: inset 0px 0px 71px -11px black;
+}
+
+section.main-wrapper {
+  background: url("../img/notebook.jpg");
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+section.main-wrapper:after {
+  position: absolute;
+  z-index: -10;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  margin-top: -200px;
+  min-height: 500px;
+  background: linear-gradient(to top, #454347, #343235);
+}
+
+#wrapper {
+  position: relative;
+  background: linear-gradient(to top, #c1c1c1 40%, transparent);
+  -webkit-box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.6);
+}
+
+#wrapper:after {
+  border-top: 1px solid #837A7b;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  -webkit-box-shadow: inset 0px 0px 30px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 30px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 30px 3px rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 70px;
+  width: 100px;
+  background: linear-gradient(to top, #454347, #343235);
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  bottom: -25px;
+  z-index: 1;
+}
+
+#inner-wrapper {
+  position: relative;
+  background: linear-gradient(to top, #2b2a30 40%, transparent);
+  margin: -15px;
+}
+
+#inner-wrapper .row {
+  margin: 0;
+}
+
+#inner-wrapper:after {
+  border-top: 1px solid #837A7b;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  content: "";
+  height: 70px;
+  width: 100px;
+  background: #c1c1c1;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  bottom: -25px;
+  z-index: 1;
+}
+
+#moto {
+  padding: 100px 70px;
+}
+
+#moto h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#moto p {
+  text-align: center;
+}
+
+#moto p.lead {
+  font-family: "AlisandraDemo", sans-serif;
+  margin: 10px auto 30px;
+}
+
+#header {
+  padding-left: 60px;
+  padding-bottom: 70px;
+}
+
+#header h1 {
+  text-align: right;
+  font-size: 30px;
+  line-height: 25px;
+  color: #989898;
+}
+
+#header p {
+  text-align: right;
+  margin: 30px auto;
+}
+
+#team {
+  padding-right: 60px;
+  padding-bottom: 70px;
+}
+
+#team h1 {
+  font-size: 30px;
+  line-height: 25px;
+  color: #989898;
+  margin: 0 0 50px;
+}
+
+#team .media {
+  margin: 0 0 30px;
+}
+
+#team .media h5 {
+  font-size: 16px;
+}
+
+#team .media h6 {
+  font-size: 15px;
+}
+
+#team .media p {
+  font-size: 14px;
+}
+
+#team img {
+  width: 125px;
+}
+
+section#work {
+  padding: 60px 0 50px;
+}
+
+section#work h3 {
+  text-align: center;
+  color: #2b2a30;
+  margin: 0 0 20px;
+}
+
+section#work .btn-outline-primary {
+  width: 138px;
+  border-color: #2b2a30;
+  color: #2b2a30;
+}
+
+section#work .btn-outline-primary:hover {
+  background-color: #fb5255;
+}
+
+section#work #gallery {
+  padding: 40px 70px;
+}
+
+section#work #gallery .col-sm-6 {
+  padding: 0;
+}
+
+.footer-div h3 {
+  margin-top: 100px;
+  text-align: center;
+  color: #989898;
+}
+
+.footer-div .form-row {
+  padding: 40px 70px 15px;
+}
+
+.footer-div .form-row .form-group {
+  margin-bottom: 6px;
+}
+
+.footer-div .form-row input[type="text"], .footer-div .form-row textarea {
+  background-color: #47434C;
+  color: #c1c1c1;
+  border-color: #47434C;
+}
+
+.footer-div .form-row textarea {
+  resize: none;
+}
+
+.footer-div .form-row input[type="text"] {
+  line-height: 1.8;
+}
+
+.footer-div .footer p {
+  margin: 40px auto 5px;
+  text-align: center;
+  color: #989898;
+}
+
+/* === MEDIA QUERIES === */
+@media screen and (max-width: 991px) {
+  #moto {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo-name {
+    font-family: "AlisandraDemo", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0 60px;
+  }
+  #moto {
+    padding: 60px 20px;
+  }
+  #moto h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #logo-name {
+    font-family: "AlisandraDemo", sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  section.main-wrapper {
+    background-size: contain;
+  }
+  section.main-wrapper:after {
+    min-height: 600px;
+  }
+  #moto {
+    padding: 30px 30px 50px;
+  }
+  #moto h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .footer-div .form-row {
+    padding: 40px 30px 15px;
+  }
+}
