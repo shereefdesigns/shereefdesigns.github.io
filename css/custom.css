@@ -78,6 +78,7 @@ section.main-wrapper:after {
 }
 
 #wrapper {
+  padding: 0;
   position: relative;
   background: linear-gradient(to top, #c1c1c1 40%, transparent);
   -webkit-box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.6);
@@ -106,7 +107,6 @@ section.main-wrapper:after {
 #inner-wrapper {
   position: relative;
   background: linear-gradient(to top, #2b2a30 40%, transparent);
-  margin: -15px;
 }
 
 #inner-wrapper .row {
@@ -114,13 +114,13 @@ section.main-wrapper:after {
 }
 
 #inner-wrapper:after {
-  border-top: 1px solid #837A7b;
+  border-top: 1px solid #59253B;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   content: "";
   height: 70px;
   width: 100px;
-  background: #c1c1c1;
+  background: #59253B;
   left: 50%;
   margin-left: -50px;
   position: absolute;
@@ -196,8 +196,127 @@ section.main-wrapper:after {
   width: 125px;
 }
 
+section#services {
+  position: relative;
+  padding: 60px 15px 50px;
+  background: #59253B;
+}
+
+section#services:after {
+  border-top: 1px solid #563D7C;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  content: "";
+  height: 70px;
+  width: 100px;
+  background: #563D7C;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  bottom: -25px;
+  z-index: 1;
+}
+
+section#services h3 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+section#services .row {
+  margin-bottom: 20px;
+}
+
+section#services .card {
+  background: #79244D;
+  padding: 20px 6px;
+  text-align: center;
+}
+
+section#pricing {
+  position: relative;
+  padding: 60px 15px 80px;
+  background: #563D7C;
+}
+
+section#pricing:after {
+  border-top: 1px solid #837A7b;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  content: "";
+  height: 70px;
+  width: 100px;
+  background: #C1C1C1;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  bottom: -25px;
+  z-index: 1;
+}
+
+section#pricing .columns {
+  width: 33.3%;
+  padding: 8px;
+}
+
+section#pricing .price {
+  list-style-type: none;
+  border: 1px solid black;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section#pricing .price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  margin: 2px;
+}
+
+section#pricing .price .header {
+  background-color: #DB4B4B;
+  border-top-left-radius: 50px;
+  color: white;
+  font-size: 25px;
+}
+
+section#pricing .price li {
+  border-bottom: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+section#pricing .price .footer {
+  border-bottom-right-radius: 50px;
+  border-bottom: none;
+  background-color: #DB4B4B;
+}
+
+section#pricing .price .grey {
+  background-color: #40515B;
+  font-size: 20px;
+}
+
+section#pricing .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 section#work {
   padding: 60px 0 50px;
+  /* Style the Image Used to Trigger the Modal */
+  /* The Modal (background) */
+  /* Modal Content (Image) */
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Add Animation - Zoom in the Modal */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */
 }
 
 section#work h3 {
@@ -222,6 +341,94 @@ section#work #gallery {
 
 section#work #gallery .col-sm-6 {
   padding: 0;
+}
+
+section#work #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section#work #myImg:hover {
+  opacity: 0.7;
+}
+
+section#work .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 4;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+section#work .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+section#work #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+section#work .modal-content, section#work #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+section#work .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+section#work .close:hover,
+section#work .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  section#work .modal-content {
+    width: 100%;
+  }
 }
 
 .footer-div h3 {
@@ -259,6 +466,12 @@ section#work #gallery .col-sm-6 {
 }
 
 /* === MEDIA QUERIES === */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #moto {
     padding: 60px 20px;
